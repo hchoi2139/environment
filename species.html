@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invasive Species</title>
+
+    <!-- These links MUST be on every page for consistent styling and functionality -->
+    <link href="styles/style.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="manifest" href="manifest.json">
+
+    <!-- This is the most common favicon, for browser tabs -->
+    <link rel="icon" href="images/favicon.ico" sizes="any">
+    <!-- This is the icon used when someone adds your PWA to their iPhone home screen -->
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+</head>
+<body class="detail-page">
+
+  <!-- Main container for the page content -->
+  <main>
+    <section>
+      <h1>Invasive Species</h1>
+    </section>
+
+    <!-- First content block with text and a corresponding image -->
+    <section class="two-column">
+      <div class="text-content">
+        <h2>Immediate Environmental Impact</h2>
+        <p>Invasive Species harm environment in various ways.</p>
+      </div>
+      <div class="image-content">
+        <img src="images/upper_species.svg" alt="Summary of upper_species.svg">
+      </div>
+    </section>
+
+    <!-- Separator bar -->
+    <hr>
+
+    <!-- Section with a full-width image -->
+    <section class="full-width-image">
+      <h2>A Philosophical Inquiry into the Origin of Our Ideas of the Sublime and Beautiful</h2>
+      <p>
+      The first and the simplest emotion which we discover in the human mind is curiosity. By curiosity I mean whatever desire we have for, or whatever pleasure we take in, novelty. We see children perpetually running from place to place, to hunt out something new: they catch with great eagerness, and with very little choice, at whatever comes before them; their attention is engaged by everything, because everything has, in that stage of life, the charm of novelty to recommend it. But as those things, which engage us merely by their novelty, cannot attach us for any length of time, curiosity is the most superficial of all the affections; it changes its object perpetually; it has an appetite which is very sharp, but very easily satisfied; and it has always an appearance of giddiness, restlessness, and anxiety. Curiosity, from its nature, is a very active principle; it quickly runs over the greatest part of its objects, and soon exhausts the variety which is commonly to be met with in nature; the same things make frequent returns, and they return with less and less of any agreeable effect. In short, the occurrences of life, by the time we come to know it a little, would be incapable of affecting the mind with any other sensations than those of loathing and weariness, if many things were not adapted to affect the mind by means of other powers besides novelty in them, and of other passions besides curiosity in ourselves. These powers and passions shall be considered in their place. But, whatever these powers are, or upon what principle soever they affect the mind, it is absolutely necessary that they should not be exerted in those things which a daily and vulgar use have brought into a stale unaffecting familiarity. Some degree of novelty must be one of the materials in every instrument which works upon the mind; and curiosity blends itself more or less with all our passions. <br />
+      <br />
+      It seems, then, necessary towards moving the passions of people advanced in life to any considerable degree, that the objects designed for that purpose, besides their being in some measure new, should be capable of exciting pain or pleasure from other causes. Pain and pleasure are simple ideas, incapable of definition. People are not liable to be mistaken in their feelings, but they are very frequently wrong in the names they give them, and in their reasonings about them. Many are of opinion, that pain arises necessarily from the removal of some pleasure; as they think pleasure does from the ceasing or diminution of some pain. For my part, I am rather inclined to imagine, that pain and pleasure, in their most simple and natural manner of affecting, are each of a positive nature, and by no means necessarily dependent on each other for their existence. The human mind is often, and I think it is for the most part, in a state neither of pain nor pleasure, which I call a state of indifference. When I am carried from this state into a state of actual pleasure, it does not appear necessary that I should pass through the medium of any sort of pain. If in such a state of indifference, or ease, or tranquillity, or call it what you please, you were to be suddenly entertained with a concert of music; or suppose some object of a fine shape, and bright, lively colors, to be presented before you; or imagine your smell is gratified with the fragrance of a rose; or if, without any previous thirst, you were to drink of some pleasant kind of wine, or to taste of some sweetmeat without being hungry; in all the several senses, of hearing, smelling, and tasting, you undoubtedly find a pleasure; yet, if I inquire into the state of your mind previous to these gratifications, you will hardly tell me that they found you in any kind of pain; or, having satisfied these several senses with their several pleasures, will you say that any pain has succeeded, though the pleasure is absolutely over? Suppose, on the other hand, a man in the same state of indifference to receive a violent blow, or to drink of some bitter potion, or to have his ears wounded with some harsh and grating sound; here is no removal of pleasure; and yet here is felt, his every sense which is affected, a pain very distinguishable. It may be said, perhaps, that the pain in these cases had its rise from the removal of the pleasure which the man enjoyed before, though that pleasure was of so low a degree as to be perceived only by the removal. But this seems to me a subtilty that is not discoverable in nature. For if, previous to the pain, I do not feel any actual pleasure, I have no reason to judge that any such thing exists; since pleasure is only pleasure as it is felt. The same may be said of pain, and with equal reason. I can never persuade myself that pleasure and pain are mere relations, which can only exist as they are contrasted; but I think I can discern clearly that there are positive pains and pleasures, which do not at all depend upon each other. Nothing is more certain to my own feelings than this. There is nothing which I can distinguish in my mind with more clearness than the three states, of indifference, of pleasure, and of pain. Every one of these I can perceive without any sort of idea of its relation to anything else. Caius is afflicted with a fit of the colic; this man is actually in pain; stretch Caius upon the rack, he will feel a much greater pain: but does this pain of the rack arise from the removal of any pleasure? or is the fit of the colic a pleasure or a pain just as we are pleased to consider it?
+    </p>
+      <img src="images/lower_species.svg" alt="Summary of lower_species.svg">
+    </section>
+
+    <!-- Link to navigate back to the home page -->
+    <a href="index.html" class="back-link">&larr; Back to Home</a>
+  </main>
+
+  <!-- Script to register the Service Worker for PWA functionality -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/service-worker.js')
+        .then(registration => {
+          console.log('Service Worker registered successfully:', registration);
+        }).catch(error => {
+          console.log('Service Worker registration failed:', error);
+        });
+    }
+  </script>
+</body>
+</html>

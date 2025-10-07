@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Environmental Pollution</title>
+
+    <!-- Links to your CSS, Google Fonts, and PWA Manifest -->
+    <link href="styles/style.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="manifest" href="manifest.json">
+
+    <!-- This is the most common favicon, for browser tabs -->
+    <link rel="icon" href="images/favicon.ico" sizes="any">
+    <!-- This is the icon used when someone adds your PWA to their iPhone home screen -->
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+</head>
+<body class="home-page">
+
+  <!-- The main container for all content -->
+  <main>
+    <section>
+      <h1>Environmental Pollution</h1>
+    </section>
+
+    <!-- First content block with text and an image -->
+    <section class="two-column">
+      <div class="text-content">
+        <h2>The Air We Breathe</h2>
+        <p>Air pollution is a critical issue affecting global health. Contaminants from industrial emissions and vehicle exhaust contribute to respiratory problems and environmental damage across the globe.</p>
+      </div>
+      <div class="image-content">
+        <img src="images/air_pollution.svg" alt="Summary of air_pollution.svg">
+      </div>
+    </section>
+
+    <!-- Separator bar -->
+    <hr>
+
+    <!-- Second content block with text and an image -->
+    <section class="two-column">
+      <div class="text-content">
+        <h2>Our Waterways at Risk</h2>
+        <p>From plastic waste to chemical runoff, our oceans and rivers are under constant threat. Protecting these vital ecosystems is essential for biodiversity and human survival.</p>
+      </div>
+      <div class="image-content">
+        <img src="images/water_pollution.svg" alt="Summary of water_pollution.svg">
+      </div>
+    </section>
+
+    <!-- Separator bar -->
+    <hr>
+
+    <!-- Section for the navigation links -->
+    <section class="link-section">
+      <h2>Explore Specific Issues</h2>
+      <ul class="link-list">
+        <li><a href="fertilizer.html">Fertilizer Runoff</a></li>
+        <li><a href="pesticide.html">Pesticide Contamination</a></li>
+        <li><a href="livestock.html">Livestock Waste</a></li>
+        <li><a href="sediment.html">Sediment Runoff</a></li>
+        <li><a href="discharge.html">Industrial Discharge</a></li>
+        <li><a href="mining.html">Mining Activities</a></li>
+        <li><a href="oil.html">Oil Spills and Leaks</a></li>
+        <li><a href="thermal.html">Thermal Pollution</a></li>
+        <li><a href="sewage.html">Untreated Sewage</a></li>
+        <li><a href="wastewater.html">Wastewater Effluent</a></li>
+        <li><a href="stormwater.html">Urban Stormwater Runoff</a></li>
+        <li><a href="disposal.html">Improper Waste Disposal</a></li>
+        <li><a href="radioactive.html">Radioactive Waste</a></li>
+        <li><a href="landfill.html">Landfill Leachate</a></li>
+        <li><a href="deforestation.html">Deforestation</a></li>
+        <li><a href="aquaculture.html">Aquaculture</a></li>
+        <li><a href="marine.html">Marine Debris</a></li>
+        <li><a href="species.html">Invasive Species</a></li>
+      </ul>
+    </section>
+
+    <!-- Page Footer -->
+    <footer>
+      <p>&copy; 2025 Environmental Awareness Project</p>
+    </footer>
+  </main>
+
+  <!-- Script to register the Service Worker for PWA functionality -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/service-worker.js')
+        .then(registration => {
+          console.log('Service Worker registered successfully:', registration);
+        }).catch(error => {
+          console.log('Service Worker registration failed:', error);
+        });
+    }
+  </script>
+</body>
+</html>

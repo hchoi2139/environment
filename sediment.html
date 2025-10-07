@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sediment Runoff</title>
+
+    <!-- These links MUST be on every page for consistent styling and functionality -->
+    <link href="styles/style.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="manifest" href="manifest.json">
+
+    <!-- This is the most common favicon, for browser tabs -->
+    <link rel="icon" href="images/favicon.ico" sizes="any">
+    <!-- This is the icon used when someone adds your PWA to their iPhone home screen -->
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+</head>
+<body class="detail-page">
+
+  <!-- Main container for the page content -->
+  <main>
+    <section>
+      <h1>Sediment Runoff</h1>
+    </section>
+
+    <!-- First content block with text and a corresponding image -->
+    <section class="two-column">
+      <div class="text-content">
+        <h2>Immediate Environmental Impact</h2>
+        <p>Sediment Runoff harm environment in various ways.</p>
+      </div>
+      <div class="image-content">
+        <img src="images/upper_sediment.svg" alt="Summary of upper_sediment.svg">
+      </div>
+    </section>
+
+    <!-- Separator bar -->
+    <hr>
+
+    <!-- Section with a full-width image -->
+    <section class="full-width-image">
+      <h2>A Vindication of the Rights of Men</h2>
+      <p>
+      SIR, <br />
+      <br />
+      It is not necessary, with courtly insincerity, to apologise to you for thus intruding on your precious time, not to profess that I think it an honour to discuss an important subject with a man whose literary abilities have raised him to notice in the state. I have not yet learned to twist my periods, nor, in the equivocal idiom of politeness, to disguise my sentiments, and imply what I should be afraid to utter: if, therefore, in the course of this epistle, I chance to express contempt, and even indignation, with some emphasis, I beseech you to believe that it is not a flight of fancy; for truth, in morals, has ever appeared to me the essence of the sublime; and, in taste, simplicity the only criterion of the beautiful. But I war not with an individual when I contend for the rights of men and the liberty of reason. You see I do not condescend to cull my words to avoid the invidious phrase, nor shall I be prevented from giving a manly definition of it, by the flimsy ridicule which a lively fancy has interwoven with the present acceptation of the term. Reverencing the rights of humanity, I shall dare to assert them; not intimidated by the horse laugh that you have raised, or waiting till time has wiped away the compassionate tears which you have elaborately laboured to excite. <br />
+      <br />
+      From the many just sentiments interspersed through the letter before me, and from the whole tendency of it, I should believe you to be a good, though a vain man, if some circumstances in your conduct did not render the inflexibility of your integrity doubtful; and for this vanity a knowledge of human nature enables me to discover such extenuating circumstances, in the very texture of your mind, that I am ready to call it amiable, and separate the public from the private character. <br />
+      <br />
+      I know that a lively imagination renders a man particularly calculated to shine in conversation and in those desultory productions where method is disregarded; and the instantaneous applause which his eloquence extorts is at once a reward and a spur. Once a wit and always a wit, is an aphorism that has received the sanction of experience; yet I am apt to conclude that the man who with scrupulous anxiety endeavours to support that shining character, can never nourish by reflection any profound, or, if you please, metaphysical passion. Ambition becomes only the tool of vanity, and his reason, the weather-cock of unrestrained feelings, is only employed to varnish over the faults which it ought to have corrected. <br />
+      <br />
+      Sacred, however, would the infirmities and errors of a good man be, in my eyes, if they were only displayed in a private circle; if the venial fault only rendered the wit anxious, like a celebrated beauty, to raise admiration on every occasion, and excite emotion, instead of the calm reciprocation of mutual esteem and unimpassioned respect. Such vanity enlivens social intercourse, and forces the little great man to be always on his guard to secure his throne; and an ingenious man, who is ever on the watch for conquest, will, in his eagerness to exhibit his whole store of knowledge, furnish an attentive observer with some useful information, calcined by fancy and formed by taste. <br />
+      <br />
+      And though some dry reasoner might whisper that the arguments were superficial, and should even add, that the feelings which are thus ostentatiously displayed are often the cold declamation of the head, and not the effusions of the heart—what will these shrewd remarks avail, when the witty arguments and ornamental feelings are on a level with the comprehension of the fashionable world, and a book is found very amusing? Even the Ladies, Sir, may repeat your sprightly sallies, and retail in theatrical attitudes many of your sentimental exclamations. Sensibility is the manie of the day, and compassion the virtue which is to cover a multitude of vices, whilst justice is left to mourn in sullen silence, and balance truth in vain. <br />
+      <br />
+      In life, an honest man with a confined understanding is frequently the slave of his habits and the dupe of his feelings, whilst the man with a clearer head and colder heart makes the passions of others bend to his interest; but truly sublime is the character that acts from principle, and governs the inferior springs of activity without slackening their vigour; whose feelings give vital heat to his resolves, but never hurry him into feverish eccentricities. <br />
+      <br />
+      However, as you have informed us that respect chills love, it is natural to conclude, that all your pretty flights arise from your pampered sensibility; and that, vain of this fancied pre-eminence of organs, you foster every emotion till the fumes, mounting to your brain, dispel the sober suggestions of reason. It is not in this view surprising, that when you should argue you become impassioned, and that reflection inflames your imagination, instead of enlightening your understanding. </br >
+      <br />
+      Quitting now the flowers of rhetoric, let us, Sir, reason together; and, believe me, I should not have meddled with these troubled waters, in order to point out your inconsistencies, if your wit had not burnished up some rusty, baneful opinions, and swelled the shallow current of ridicule till it resembled the flow of reason, and presumed to be the test of truth.
+    </p>
+      <img src="images/lower_sediment.svg" alt="Summary of lower_sediment.svg">
+    </section>
+
+    <!-- Link to navigate back to the home page -->
+    <a href="index.html" class="back-link">&larr; Back to Home</a>
+  </main>
+
+  <!-- Script to register the Service Worker for PWA functionality -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/service-worker.js')
+        .then(registration => {
+          console.log('Service Worker registered successfully:', registration);
+        }).catch(error => {
+          console.log('Service Worker registration failed:', error);
+        });
+    }
+  </script>
+</body>
+</html>

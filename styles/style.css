@@ -1,0 +1,153 @@
+/* =========================================
+   1. Global Styles
+   ========================================= */
+:root {
+  --background-color: #f4f4f4; /* Light grey page background */
+  --content-bg: #ffffff;      /* White for the content area */
+  --text-color: #333333;      /* Dark grey for text */
+  --primary-color: #005a9c;     /* A professional blue */
+  --border-color: #e0e0e0;     /* Light border for bars */
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* =========================================
+   2. Main Layout Container
+   ========================================= */
+
+/* This <main> element will hold all content and center it */
+main {
+  max-width: 900px;
+  margin: 40px auto; /* Add space at top/bottom, center horizontally */
+  background-color: var(--content-bg);
+  padding: 20px 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* General styling for each content section */
+section {
+  margin-bottom: 30px;
+}
+
+/* The separator "Bar" from your drawing */
+hr {
+  border: 0;
+  height: 1px;
+  background-color: var(--border-color);
+  margin: 40px 0;
+}
+
+/* =========================================
+   3. Content Blocks & Typography
+   ========================================= */
+
+/* Main page title */
+h1 {
+  text-align: center;
+  font-size: 48px;
+  margin-bottom: 40px;
+  color: var(--primary-color);
+}
+
+/* Section titles */
+h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 10px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Layout for blocks with text on the left and image on the right */
+.two-column {
+  display: flex;
+  gap: 30px; /* Space between text and image */
+  align-items: center;
+}
+
+.two-column .text-content {
+  flex: 1; /* Allows text to take up available space */
+}
+
+.two-column .image-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.two-column .image-content img {
+    border-radius: 8px;
+}
+
+
+/* =========================================
+   4. Page-Specific Styles
+   ========================================= */
+
+/* Home Page: Two-column link list */
+.home-page .link-section h2 {
+  text-align: center;
+  border-bottom: none;
+}
+.home-page .link-list {
+  list-style: none;
+  padding: 0;
+  columns: 2; /* Creates two columns */
+  column-gap: 40px;
+}
+
+.home-page .link-list li {
+  margin-bottom: 12px;
+}
+
+.home-page .link-list a {
+  font-weight: bold;
+}
+
+/* Detail Page: Full-width image */
+.detail-page .full-width-image img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Footer Style */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border-color);
+  color: #777;
+}
+
+/* Back Link on Detail Pages */
+.detail-page .back-link {
+    display: inline-block;
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 18px;
+}

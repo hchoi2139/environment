@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marine Debris</title>
+
+    <!-- These links MUST be on every page for consistent styling and functionality -->
+    <link href="styles/style.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="manifest" href="manifest.json">
+
+    <!-- This is the most common favicon, for browser tabs -->
+    <link rel="icon" href="images/favicon.ico" sizes="any">
+    <!-- This is the icon used when someone adds your PWA to their iPhone home screen -->
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+</head>
+<body class="detail-page">
+
+  <!-- Main container for the page content -->
+  <main>
+    <section>
+      <h1>Marine Debris</h1>
+    </section>
+
+    <!-- First content block with text and a corresponding image -->
+    <section class="two-column">
+      <div class="text-content">
+        <h2>Immediate Environmental Impact</h2>
+        <p>Marine Debris harms environment in various ways.</p>
+      </div>
+      <div class="image-content">
+        <img src="images/upper_marine.svg" alt="Summary of upper_marine.svg">
+      </div>
+    </section>
+
+    <!-- Separator bar -->
+    <hr>
+
+    <!-- Section with a full-width image -->
+    <section class="full-width-image">
+      <h2>Le Rouge et le Noir</h2>
+      <p>
+      La petite ville de Verrières peut passer pour l'une des plus jolies de la Franche-Comté. Ses maisons blanches avec leurs toits pointus de tuiles rouges s'étendent sur la pente d'une colline, dont des touffes de vigoureux châtaigniers marquent les moindres sinuosités. Le Doubs coule à quelques centaines de pieds au-dessous de ses fortifications bâties jadis par les Espagnols, et maintenant ruinées. <br />
+      <br />
+      Verrières est abritée du côté du nord par une haute montagne, c'est une des branches du Jura. Les cimes brisées du Verra se couvrent de neige dès les premiers froids d'octobre. Un torrent, qui se précipite de la montagne, traverse Verrières avant de se jeter dans le Doubs et donne le mouvement à un grand nombre de scies à bois; c'est une industrie fort simple et qui procure un certain bien-être à la majeure partie des habitants plus paysans que bourgeois. Ce ne sont pas cependant les scies à bois qui ont enrichi cette petite ville. C'est à la fabrique des toiles peintes, dites de Mulhouse, que l'on doit l'aisance générale qui, depuis la chute de Napoléon a fait rebâtir les façades de presque toutes les maisons de Verrières. <br />
+      <br />
+      A peine entre-t-on dans la ville que l'on est étourdi par le fracas d'une machine bruyante et terrible en apparence. Vingt marteaux pesants, et retombant avec un bruit qui fait trembler le pavé, sont élevés par une roue que l'eau du torrent fait mouvoir. Chacun de ces marteaux fabrique, chaque jour, je ne sais combien de milliers de clous. Ce sont de jeunes filles fraîches et jolies qui présentent aux coups de ces marteaux énormes les petits morceaux de fer qui sont rapidement transformés en clous. Ce travail, si rude en apparence, est un de ceux qui étonnent le plus le voyageur qui pénètre pour la première fois dans les montagnes qui séparent la France de l'Helvétie. Si, en entrant à Verrières, le voyageur demande à qui appartient cette belle fabrique de clous qui assourdit les gens qui montent la grande rue, on lui répond avec un accent traînard: Eh! elle est à M. le maire. <br />
+      <br />
+      Pour peu que le voyageur s'arrête quelques instants dans cette grande rue de Verrières, qui va en montant depuis la rive du Doubs jusque vers le sommet de la colline, il y a cent à parier contre un qu'il verra paraître un grand homme à l'air affairé et important. <br />
+      <br />
+      A son aspect tous les drapeaux se lèvent rapidement. Ses cheveux sont grisonnants, et il est vêtu de gris. Il est chevalier de plusieurs ordres, il a un grand front, un nez aquilin, et au total sa figure ne manque pas d'une certaine régularité: on trouve même, au premier aspect qu'elle réunit à la dignité du maire de village cette sorte d'agrément qui peut encore se rencontrer avec quarante-huit ou cinquante ans. Mais bientôt le voyageur parisien est choqué d'un certain air de contentement de soi et de suffisance mêlé à je ne sais quoi de borné et de peu inventif. On sent enfin que le talent de cet homme-là se borne à se faire payer bien exactement ce qu'on lui doit, et à payer lui-même le plus tard possible quand il doit. <br />
+      <br />
+      Tel est le maire de Verrières, M. de Rênal. Après avoir traversé la rue d'un pas grave, il entre à la mairie et disparaît aux yeux du voyageur. Mais, cent pas plus haut, si celui-ci continue sa promenade, il aperçoit une maison d'assez belle apparence, et à travers une grille de fer attenante à la maison, des jardins magnifiques. Au-delà, c'est une ligne d'horizon formée par les collines de la Bourgogne; et qui semble faite à souhait pour le plaisir des yeux. Cette vue fait oublier au voyageur l'atmosphère empestée des petits intérêts d'argent dont il commence à être asphyxié. <br />
+      <br />
+      On lui apprend que cette maison appartient à M. de Rênal. C'est aux bénéfices qu'il a faits sur sa grande fabrique de clous que le maire de Verrières doit cette belle habitation en pierre de taille qu'il achève en ce moment. Sa famille dit-on, est espagnole antique, et, à ce qu'on prétend, établie dans le pays bien avant la conquête de Louis X.
+    </p>
+      <img src="images/lower_marine.svg" alt="Summary of lower_marine.svg">
+    </section>
+
+    <!-- Link to navigate back to the home page -->
+    <a href="index.html" class="back-link">&larr; Back to Home</a>
+  </main>
+
+  <!-- Script to register the Service Worker for PWA functionality -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/service-worker.js')
+        .then(registration => {
+          console.log('Service Worker registered successfully:', registration);
+        }).catch(error => {
+          console.log('Service Worker registration failed:', error);
+        });
+    }
+  </script>
+</body>
+</html>

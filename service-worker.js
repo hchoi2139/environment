@@ -68,8 +68,8 @@ const urlsToCache = [
   '/environment/images/lower_species.svg',
 
   // icon files
-  '/environment/images/favicon.ico',
-  '/environment/images/apple-touch-icon.png',
+  '/environment/images/icons/favicon.ico',
+  '/environment/images/icons/apple-touch-icon.png',
   '/environment/images/icons/icon-192x192.png',
   '/environment/images/icons/icon-512x512.png'
 ];

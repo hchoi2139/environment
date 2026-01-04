@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecologue</title>
+
+    <!-- Links to your CSS, Google Fonts, and PWA Manifest -->
+    <link href="styles/style.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="manifest" href="manifest.json">
+
+    <!-- This is the most common favicon, for browser tabs -->
+    <link rel="icon" href="images/favicon.ico" sizes="any">
+    <!-- This is the icon used when someone adds your PWA to their iPhone home screen -->
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+</head>
+<body class="home-page">
+
+  <!-- The main container for all content -->
+  <main>
+    <section>
+      <h1>Bienvenue à Ecologue</h1>
+    </section>
+
+    <!-- First content block with text and an image -->
+    <section class="two-column">
+      <div class="text-content">
+        <h2>Notre Mission</h2>
+        <p>Saviez-vous que chaque année, des millions de tonnes de déchets sont produites dans le monde, et que leur gestion impacte directement notre environnement ? Pourtant, bien trier ses déchets n’est pas toujours simple : entre les consignes qui évoluent, les symboles mystérieux sur les emballages et la diversité des matériaux, il est facile de s’y perdre. Ecologue est là pour vous éclairer. Notre mission ? Vous expliquer, de manière simple et pratique, ce que deviennent vos déchets une fois jetés, et surtout, comment les trier correctement pour qu’ils soient recyclés, valorisés ou éliminés de façon responsable.Ce site va vous aider a trier les dechets. C'est-à-dire, savoir ce que les déchets deviennent et comment les déchets sont triés. Ensemble, agissons pour un avenir plus propre. En triant mieux, vous contribuez à préserver les ressources naturelles, à limiter la pollution et à soutenir l’économie circulaire. Avec Ecologue, le tri devient un geste simple, logique et impactant. Prêt à devenir un expert du tri ? Explorez nos rubriques et découvrez comment chaque déchet compte.
+</p>
+      </div>
+      <div class="image-content">
+        <img src="images/apple-touch-icon.png" alt="Logo">
+      </div>
+    </section>
+
+    <!-- Separator bar -->
+    <hr>
+
+    <!-- Second content block with text and an image -->
+    <section class="two-column">
+      <div class="text-content">
+        <h2>Pourquoi est-ce important ?</h2>
+       <p>Le plastique, les biodéchets, le métal, le verre, le papier… Chaque type de déchet a sa propre « vie après la poubelle ». Par exemple, une bouteille en plastique bien triée peut renaître en fibre polaire ou en nouvel emballage, tandis qu’un reste de nourriture composté devient un engrais naturel. À l’inverse, un déchet mal trié peut finir incinéré ou enfoui, gaspillant des ressources et polluant notre planète.</p>
+      </div>
+      <div class="image-content">
+        <img src="images/Déchets (c)De vchal shutterstock_597557036 (1).jpg" alt="dechets.jpg">
+      </div>
+    </section>
+
+    <!-- Separator bar -->
+    <hr>
+
+    <!-- Second content block with text and an image -->
+    <section class="two-column">
+      <div class="text-content">
+        <h2>Comment Ecologue vous accompagne ?</h2>
+       <p>Sur notre site, vous trouverez des informations claires et détaillées pour chaque type de déchet. Tous les déchets seront traités en détail grace aux questions suivantes: "De quoi se compose ce déchet?" et "Comment trier et que devient-il?"</p>
+      </div>
+      <div class="image-content">
+        <img src="images/Déchets (c)De vchal shutterstock_597557036 (1).jpg" alt="dechets.jpg">
+      </div>
+    </section>
+
+    <!-- Separator bar -->
+    <hr>
+
+    <!-- Section for the navigation links -->
+    <section class="link-section">
+      <h2>Type de déchets</h2>
+      <ul class="link-list">
+        <li><a href="Verre.html">Verre</a></li>
+        <li><a href="Papier et Carton.html">Papier et Carton</a></li>
+        <li><a href="Plastique.html">Plastique</a></li>
+        <li><a href="Métal.html">Metal</a></li>
+        <li><a href="disposal.html">Biodéchets</a></li>
+        <li><a href="radioactive.html">Déchets non recyclables</a></li>
+      </ul>
+    </section>
+
+    <!-- Page Footer -->
+    <footer>
+    </footer>
+  </main>
+
+  <!-- Script to register the Service Worker for PWA functionality -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/service-worker.js')
+        .then(registration => {
+          console.log('Service Worker registered successfully:', registration);
+        }).catch(error => {
+          console.log('Service Worker registration failed:', error);
+        });
+    }
+  </script>
+</body>
+</html>

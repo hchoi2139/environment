@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="/environment/">
+    <title>Plastique</title>
+
+    <!-- These links MUST be on every page for consistent styling and functionality -->
+    <link href="styles/style.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="manifest" href="manifest.json">
+
+    <!-- This is the most common favicon, for browser tabs -->
+    <link rel="icon" href="images/icons/favicon.ico" sizes="any">
+    <!-- This is the icon used when someone adds your PWA to their iPhone home screen -->
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+</head>
+<body class="detail-page">
+
+  <!-- Main container for the page content -->
+  <main>
+    <section>
+      <h1>Plastique</h1>
+    </section>
+
+    <!-- First content block with text and a corresponding image -->
+    <section class="two-column">
+      <div class="text-content">
+        <h2>Qu’est-ce que le plastique?</h2>
+        <p>Le plastique est une matière artificielle issue de la transformation de polymères, eux-mêmes dérivés du pétrole ou du gaz naturel. Pour le fabriquer, l’homme chauffe ces polymères jusqu’à ce qu’ils deviennent malléables, puis les moule ou les extrude pour créer des objets variés : emballages, bouteilles, pièces techniques ou textiles. Une fois refroidi, le plastique durcit et conserve sa forme, tout en restant léger, résistant et imperméable. Sa composition peut varier selon les additifs utilisés, ce qui lui confère des propriétés spécifiques comme la flexibilité ou la rigidité.</p>
+      </div>
+      <div class="image-content">
+        <img src="images/upper_plastique.jpg" alt="Summary of upper_plastique.jpg">
+      </div>
+    </section>
+
+    <!-- Separator bar -->
+    <hr>
+
+    <!-- Section with a full-width image -->
+    <section class="full-width-image">
+      <h2>Comment trier et que deviennent ils?</h2>
+      <p>
+      Trier le plastique permet de réduire fortement la pollution et de limiter la consommation de pétrole. Les emballages plastiques, comme les bouteilles, flacons, barquettes et films, vont en général dans la poubelle ou le conteneur de tri dédié aux emballages. Il est conseillé de les vider mais il n’est pas nécessaire de les laver soigneusement. Les bouchons en plastique peuvent rester vissés sur les bouteilles, car ils seront recyclés avec elles. En revanche, les objets en plastique dur comme les jouets, les seaux ou la vaisselle en plastique ne vont pas dans le bac de tri des emballages. Ils doivent être déposés en déchèterie ou avec les encombrants, selon les consignes locales. Une fois collectés, les plastiques sont triés par type de matière puis transformés en granulés. Ces granulés servent à fabriquer de nouveaux objets, comme des vêtements, du mobilier urbain ou de nouveaux emballages. Bien trier le plastique permet ainsi de limiter les déchets qui finissent dans la nature ou dans les océans. C’est un geste simple que chacun peut faire au quotidien, à la maison, à l’école ou au travail. <br />
+      <br />
+      Après avoir été jeté, le plastique suit différents chemins selon son type et son mode de collecte. S’il est déposé dans une poubelle de tri, il est acheminé vers un centre de tri où il est séparé des autres déchets. Les plastiques recyclables, comme le PET des bouteilles (plastique recyclé), sont nettoyés, broyés, puis fondus pour créer de nouveaux produits.Ce processus permet d’économiser de l’énergie et de réduire la consommation de pétrole. Cependant, tous les plastiques ne sont pas recyclables : certains finissent dans les incinérateurs. Ils y sont brûlés pour produire de l’énergie, mais cette méthode émet du CO₂. Une grande partie du plastique mal trié se retrouve malheureusement dans la nature. Emporté par le vent ou les rivières, il atteint souvent les océans. Là, il se fragmente en microplastiques presque invisibles.Ces particules contaminent les poissons et entrent dans la chaîne alimentaire. Au final, le plastique jeté aujourd’hui peut polluer pendant des siècles. Réduire, réutiliser et recycler restent les meilleures solutions pour limiter son impact. Agir dès maintenant, c’est protéger notre planète et les générations futures.
+    </p>
+      <img src="images/lower_plastique.jpg" alt="Summary of lower_plastique.jpg">
+    </section>
+
+    <!-- Link to navigate back to the home page -->
+    <a href="index.html" class="back-link">&larr; Accueil</a>
+  </main>
+
+  <!-- Script to register the Service Worker for PWA functionality -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/service-worker.js')
+        .then(registration => {
+          console.log('Service Worker registered successfully:', registration);
+        }).catch(error => {
+          console.log('Service Worker registration failed:', error);
+        });
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="/environment/">
+    <title>Verre</title>
+
+    <!-- These links MUST be on every page for consistent styling and functionality -->
+    <link href="styles/style.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="manifest" href="manifest.json">
+
+    <!-- This is the most common favicon, for browser tabs -->
+    <link rel="icon" href="images/icons/favicon.ico" sizes="any">
+    <!-- This is the icon used when someone adds your PWA to their iPhone home screen -->
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+</head>
+<body class="detail-page">
+
+  <!-- Main container for the page content -->
+  <main>
+    <section>
+      <h1>Verre</h1>
+    </section>
+
+    <!-- First content block with text and a corresponding image -->
+    <section class="two-column">
+      <div class="text-content">
+        <h2>Qu'est-ce que le verre?</h2>
+        <p>Le verre est une matière majoritèrement crée par l'homme. Il doit mélanger de la silice (sable), de la soude (pour abaisser la température de fusion) et de la chaux (pour la résistance), puis il chauffe le tout entre 1300°C et 1600°C dans un four. Puis le mélange fond pour former une masse liquide dorée, qui est ensuite mise en forme par soufflage dans un moule ou par la technique du float(procédé de fabrication du verre sur de l'étain liquide). Le verre est ensuite refroidi lentement (recuit) pour éviter les tensions internes et lui donner sa forme finale et sa solidité.</p>
+      </div>
+      <div class="image-content">
+        <img src="images/upper_verre.webp" alt="Summary of upper_verre.webp">
+      </div>
+    </section>
+
+    <!-- Separator bar -->
+    <hr>
+
+    <!-- Section with a full-width image -->
+    <section class="full-width-image">
+      <h2>Comment trier et que deviennent ils?</h2>
+      <p>
+      Trier le verre est un geste simple qui a un grand impact sur notre environnement. En le recyclant, nous réduisons les déchets et préservons les ressources naturelles. Les bouteilles, pots et bocaux en verre peuvent être déposés dans les conteneurs prévus à cet effet. Il suffit de les vider avant de les jeter, sans forcément enlever les étiquettes ou les bouchons. Ces éléments seront séparés automatiquement lors du processus de recyclage. En revanche, les objets comme la vaisselle, les miroirs ou les ampoules ne doivent pas y être placés, car ils ne se recyclent pas de la même façon. Les bornes de collecte sont disponibles un peu partout, souvent près des commerces ou dans les quartiers. Chaque bouteille triée est un pas vers un avenir plus durable. Le verre se recycle à l’infini, sans perdre sa qualité. Recycler le verre, c’est donc limiter la pollution et économiser de l’énergie.<br />
+      <br />
+      Après que le verre a été trié et jeté dans la benne, il commence un nouveau cycle de vie grâce au recyclage. Les bouteilles et bocaux sont d’abord collectés puis transportés vers un centre de traitement spécialisé. Sur place, le verre est déchargé, contrôlé puis orienté vers des machines de tri. Les impuretés comme le plastique, le métal, les bouchons, les étiquettes ou les morceaux de céramique sont retirés. Le verre propre est ensuite broyé en petits éclats appelés calcin, prêts à être refondus. Ce calcin est mélangé à des matières premières comme le sable, le calcaire et le carbonate de sodium. Le mélange est chauffé dans de grands fours à environ 1 500 °C pour obtenir une pâte de verre en fusion. Cette pâte est utilisée pour fabriquer de nouvelles bouteilles, de nouveaux bocaux ou d’autres produits verriers. Grâce à ce procédé, le verre d’emballage se recycle à l’infini sans perdre en qualité. Chaque geste de tri permet ainsi d’économiser des ressources naturelles et de l’énergie. Le recyclage du verre réduit aussi les déchets envoyés en décharge et les émissions polluantes. En déposant correctement ton verre dans le conteneur, tu participes directement à ce cycle vertueux.
+    </p>
+      <img src="images/lower_verre.jpg" alt="Summary of lower_verre.jpg">
+    </section>
+
+    <!-- Link to navigate back to the home page -->
+    <a href="index.html" class="back-link">&larr; Accueil</a>
+  </main>
+
+  <!-- Script to register the Service Worker for PWA functionality -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/service-worker.js')
+        .then(registration => {
+          console.log('Service Worker registered successfully:', registration);
+        }).catch(error => {
+          console.log('Service Worker registration failed:', error);
+        });
+    }
+  </script>
+</body>
+</html>

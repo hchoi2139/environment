@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="/environment/">
+    <title>Papier et Carton</title>
+
+    <!-- These links MUST be on every page for consistent styling and functionality -->
+    <link href="styles/style.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="manifest" href="manifest.json">
+
+    <!-- This is the most common favicon, for browser tabs -->
+    <link rel="icon" href="images/icons/favicon.ico" sizes="any">
+    <!-- This is the icon used when someone adds your PWA to their iPhone home screen -->
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+</head>
+<body class="detail-page">
+
+  <!-- Main container for the page content -->
+  <main>
+    <section>
+      <h1>Papier et Carton</h1>
+    </section>
+
+    <!-- First content block with text and a corresponding image -->
+    <section class="two-column">
+      <div class="text-content">
+        <h2>Qu'est ce que le papier et le carton?</h2>
+        <p>Le papier et le carton sont deux matériaux fabriqués à partir de fibres de cellulose, principalement issues du bois ou de fibres recyclées. Ils sont constitués de fibres végétales compactées et séchées. La principale différence réside dans leur épaisseur et leur densité : le carton est plus épais, plus rigide et plus résistant que le papier, et sa masse est généralement supérieure à 224 g/m² selon une norme française.</p>
+      </div>
+      <div class="image-content">
+        <img src="images/upper_papier.jpg" alt="Summary of upper_papier.jpg">
+      </div>
+    </section>
+
+    <!-- Separator bar -->
+    <hr>
+
+    <!-- Section with a full-width image -->
+    <section class="full-width-image">
+      <h2>Comment trier et que deviennent ils?</h2>
+      <p>
+      Trier le papier est un geste écologique à la portée de tous. Il permet de réduire la déforestation et de donner une nouvelle vie à nos déchets quotidiens. Le papier et le carton se recyclent facilement, à condition d’être bien séparés du reste des ordures. Les journaux, prospectus, cahiers, enveloppes ou boîtes en carton peuvent être déposés dans les bacs bleus ou les conteneurs de tri sélectif. Avant de les jeter, il est conseillé d’enlever le plastique, les films adhésifs ou les restes de nourriture. En revanche, le papier sali, ciré ou plastifié ne doit pas être recyclé. Une fois collecté, le papier est trié, broyé et transformé en pâte qui servira à fabriquer de nouveaux produits. Ce cycle vertueux permet d’économiser des tonnes de bois et d’eau chaque année. Trier le papier, c’est donc préserver les forêts et limiter la pollution. Chacun peut agir à son échelle, à la maison, au bureau ou à l’école.<br />
+      <br />
+      Une fois le papier et le carton triés et jetés dans le bon bac, ils suivent un parcours précis pour être recyclés et transformés en nouveaux produits. Les camions de collecte récupèrent ces déchets et les acheminent vers un centre de tri spécialisé. Sur place, les papiers et cartons sont séparés des autres matériaux, puis triés par qualité et par type (journaux, cartons d’emballage, papiers de bureau…). Ils sont ensuite compactés en grosses balles pour faciliter le transport vers les usines de recyclage, appelées papeteries. Dans ces usines, le papier et le carton sont mélangés avec de l’eau dans un grand pulpeur (machine qui transforme le papier en pâte molle fibreuse) pour former une pulpe fibreuse. Les agrafes, plastiques, colles et autres impuretés sont retirés grâce à des systèmes de filtration et de nettoyage. La pulpe est parfois désencrée et blanchie pour enlever l’encre et améliorer la qualité du futur papier. Cette pulpe propre est ensuite étalée, pressée et séchée sur de grandes machines pour former de nouvelles feuilles de papier ou de carton. Le tout est enroulé en grandes bobines, qui seront découpées pour fabriquer des cahiers, cartons d’emballage, boîtes, papiers d’hygiène et bien d’autres produits. Les fibres de papier peuvent être recyclées plusieurs fois avant de devenir trop courtes pour être réutilisées. Recycler le papier et le carton permet ainsi d’économiser du bois, de l’eau et de l’énergie. Ce processus réduit aussi la quantité de déchets envoyés en décharge ou incinérés. En triant correctement papier et carton, chacun contribue à donner une nouvelle vie à ces matériaux et à protéger les forêts.
+    </p>
+      <img src="images/lower_papier.jpg" alt="Summary of lower_papier.jpg">
+    </section>
+
+    <!-- Link to navigate back to the home page -->
+    <a href="index.html" class="back-link">&larr; Accueil</a>
+  </main>
+
+  <!-- Script to register the Service Worker for PWA functionality -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/service-worker.js')
+        .then(registration => {
+          console.log('Service Worker registered successfully:', registration);
+        }).catch(error => {
+          console.log('Service Worker registration failed:', error);
+        });
+    }
+  </script>
+</body>
+</html>

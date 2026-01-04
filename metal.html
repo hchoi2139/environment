@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="/environment/">
+    <title>Métal</title>
+
+    <!-- These links MUST be on every page for consistent styling and functionality -->
+    <link href="styles/style.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="manifest" href="manifest.json">
+
+    <!-- This is the most common favicon, for browser tabs -->
+    <link rel="icon" href="images/icons/favicon.ico" sizes="any">
+    <!-- This is the icon used when someone adds your PWA to their iPhone home screen -->
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+</head>
+<body class="detail-page">
+
+  <!-- Main container for the page content -->
+  <main>
+    <section>
+      <h1>Métal</h1>
+    </section>
+
+    <!-- First content block with text and a corresponding image -->
+    <section class="two-column">
+      <div class="text-content">
+        <h2>Qu’est-ce que le métal?</h2>
+        <p>Le métal est un matériau naturel extrait de minerais tels que le fer, l’aluminium ou le cuivre, présents dans la croûte terrestre. Pour l’obtenir, ces minerais sont fondus à très haute température dans des fours industriels, puis purifiés et coulés dans des moules ou laminés en feuilles. Après refroidissement, le métal se solidifie et développe des propriétés uniques : résistance mécanique, conductivité électrique ou thermique, et durabilité. Selon sa composition et ses alliages, il peut être utilisé pour fabriquer des structures, des outils ou des composants électroniques.</p>
+      </div>
+      <div class="image-content">
+        <img src="images/upper_metal.jpg" alt="Summary of upper_metal.jpg">
+      </div>
+    </section>
+
+    <!-- Separator bar -->
+    <hr>
+
+    <!-- Section with a full-width image -->
+    <section class="full-width-image">
+      <h2>Comment trier et que deviennent ils?</h2>
+      <p>
+      Pour bien trier le métal, il faut d’abord reconnaître les emballages métalliques qui vont dans le bac de tri. Tu peux y déposer les canettes, boîtes de conserve, boîtes de boisson, barquettes en aluminium, aérosols vides, capsules et couvercles métalliques. Avant de les jeter, il suffit de les vider de leur contenu, sans les laver parfaitement. Il est important de les mettre en vrac, sans sac, pour que les machines de tri puissent bien les repérer. Il ne faut pas les écraser ni les imbriquer les uns dans les autres, car cela complique le tri automatique. Les papiers aluminium et petits morceaux de métal peuvent aussi être mis dans le bac de tri s’ils sont propres. En revanche, les gros objets métalliques comme les casseroles, poêles, outils ou pièces de bricolage ne vont pas dans ce bac. Ils doivent être déposés en déchetterie, où ils seront pris en charge comme ferraille. Les objets dangereux (bouteilles de gaz, bidons de produits toxiques, certains aérosols) suivent des consignes spécifiques indiquées par ta commune. En cas de doute, il est utile de regarder les pictogrammes de tri sur l’emballage ou de consulter le guide local de tri. Bien trier le métal permet de le recycler presque à l’infini et d’économiser beaucoup d’énergie. Grâce à ce geste simple, les emballages métalliques peuvent devenir de nouveaux objets au lieu de finir en décharge.​<br />
+      <br />
+      Une fois le métal trié et jeté dans le bon bac, il est collecté puis envoyé vers un centre de tri spécialisé. Sur les chaînes de tri, les emballages métalliques sont séparés des autres matières grâce à des aimants pour l’acier et à des courants de Foucault pour l’aluminium. Les métaux sont ensuite regroupés par type, puis compactés en grosses balles pour faciliter le transport vers les aciéries et fonderies. Dans ces usines, les canettes, boîtes de conserve et autres emballages métalliques sont d’abord broyés pour obtenir des morceaux plus petits. Ils passent ensuite dans des fours où la chaleur permet d’éliminer les vernis, laques, étiquettes et autres impuretés. Le métal purifié est alors fondu à haute température pour devenir une matière première liquide. Cette matière est coulée en lingots, blocs ou bobines de métal qui serviront à fabriquer de nouveaux produits. L’acier et l’aluminium recyclés peuvent redevenir des canettes, des boîtes, des pièces pour l’automobile, le bâtiment ou des objets du quotidien. Le métal est recyclable à l’infini sans perte de qualité, ce qui en fait un matériau très précieux pour l’économie circulaire. Son recyclage permet de réduire fortement la consommation de ressources naturelles et d’énergie par rapport à la production de métal neuf. En triant correctement le métal, chacun contribue à limiter les déchets et les émissions de CO₂. Ce geste simple donne une véritable seconde vie aux emballages métalliques que nous utilisons chaque jour.
+      <br />
+    </p>
+      <img src="images/lower_metal.jpg" alt="Summary of lower_metal.jpg">
+    </section>
+
+    <!-- Link to navigate back to the home page -->
+    <a href="index.html" class="back-link">&larr; Accueil</a>
+  </main>
+
+  <!-- Script to register the Service Worker for PWA functionality -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/service-worker.js')
+        .then(registration => {
+          console.log('Service Worker registered successfully:', registration);
+        }).catch(error => {
+          console.log('Service Worker registration failed:', error);
+        });
+    }
+  </script>
+</body>
+</html>
